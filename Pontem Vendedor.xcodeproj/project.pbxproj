@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32716C311FD72B1500414527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C301FD72B1500414527 /* AppDelegate.swift */; };
+		32716C331FD72B1500414527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C321FD72B1500414527 /* ViewController.swift */; };
+		32716C361FD72B1500414527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32716C341FD72B1500414527 /* Main.storyboard */; };
+		32716C381FD72B1500414527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32716C371FD72B1500414527 /* Assets.xcassets */; };
+		32716C3B1FD72B1500414527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32716C391FD72B1500414527 /* LaunchScreen.storyboard */; };
+		32716C461FD72B1500414527 /* Pontem_VendedorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C451FD72B1500414527 /* Pontem_VendedorTests.swift */; };
+		32716C511FD72B1500414527 /* Pontem_VendedorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32716C421FD72B1500414527 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32716C251FD72B1500414527 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32716C2C1FD72B1500414527;
+			remoteInfo = "Pontem Vendedor";
+		};
+		32716C4D1FD72B1500414527 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32716C251FD72B1500414527 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32716C2C1FD72B1500414527;
+			remoteInfo = "Pontem Vendedor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32716C2D1FD72B1500414527 /* Pontem Vendedor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pontem Vendedor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32716C301FD72B1500414527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32716C321FD72B1500414527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32716C351FD72B1500414527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32716C371FD72B1500414527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32716C3A1FD72B1500414527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32716C3C1FD72B1500414527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32716C411FD72B1500414527 /* Pontem VendedorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pontem VendedorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32716C451FD72B1500414527 /* Pontem_VendedorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pontem_VendedorTests.swift; sourceTree = "<group>"; };
+		32716C471FD72B1500414527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32716C4C1FD72B1500414527 /* Pontem VendedorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pontem VendedorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pontem_VendedorUITests.swift; sourceTree = "<group>"; };
+		32716C521FD72B1500414527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32716C2A1FD72B1500414527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32716C3E1FD72B1500414527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32716C491FD72B1500414527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32716C241FD72B1500414527 = {
+			isa = PBXGroup;
+			children = (
+				32716C2F1FD72B1500414527 /* Pontem Vendedor */,
+				32716C441FD72B1500414527 /* Pontem VendedorTests */,
+				32716C4F1FD72B1500414527 /* Pontem VendedorUITests */,
+				32716C2E1FD72B1500414527 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32716C2E1FD72B1500414527 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32716C2D1FD72B1500414527 /* Pontem Vendedor.app */,
+				32716C411FD72B1500414527 /* Pontem VendedorTests.xctest */,
+				32716C4C1FD72B1500414527 /* Pontem VendedorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32716C2F1FD72B1500414527 /* Pontem Vendedor */ = {
+			isa = PBXGroup;
+			children = (
+				32716C301FD72B1500414527 /* AppDelegate.swift */,
+				32716C321FD72B1500414527 /* ViewController.swift */,
+				32716C341FD72B1500414527 /* Main.storyboard */,
+				32716C371FD72B1500414527 /* Assets.xcassets */,
+				32716C391FD72B1500414527 /* LaunchScreen.storyboard */,
+				32716C3C1FD72B1500414527 /* Info.plist */,
+			);
+			path = "Pontem Vendedor";
+			sourceTree = "<group>";
+		};
+		32716C441FD72B1500414527 /* Pontem VendedorTests */ = {
+			isa = PBXGroup;
+			children = (
+				32716C451FD72B1500414527 /* Pontem_VendedorTests.swift */,
+				32716C471FD72B1500414527 /* Info.plist */,
+			);
+			path = "Pontem VendedorTests";
+			sourceTree = "<group>";
+		};
+		32716C4F1FD72B1500414527 /* Pontem VendedorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */,
+				32716C521FD72B1500414527 /* Info.plist */,
+			);
+			path = "Pontem VendedorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32716C2C1FD72B1500414527 /* Pontem Vendedor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32716C551FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem Vendedor" */;
+			buildPhases = (
+				32716C291FD72B1500414527 /* Sources */,
+				32716C2A1FD72B1500414527 /* Frameworks */,
+				32716C2B1FD72B1500414527 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pontem Vendedor";
+			productName = "Pontem Vendedor";
+			productReference = 32716C2D1FD72B1500414527 /* Pontem Vendedor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32716C401FD72B1500414527 /* Pontem VendedorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32716C581FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem VendedorTests" */;
+			buildPhases = (
+				32716C3D1FD72B1500414527 /* Sources */,
+				32716C3E1FD72B1500414527 /* Frameworks */,
+				32716C3F1FD72B1500414527 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32716C431FD72B1500414527 /* PBXTargetDependency */,
+			);
+			name = "Pontem VendedorTests";
+			productName = "Pontem VendedorTests";
+			productReference = 32716C411FD72B1500414527 /* Pontem VendedorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32716C4B1FD72B1500414527 /* Pontem VendedorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32716C5B1FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem VendedorUITests" */;
+			buildPhases = (
+				32716C481FD72B1500414527 /* Sources */,
+				32716C491FD72B1500414527 /* Frameworks */,
+				32716C4A1FD72B1500414527 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32716C4E1FD72B1500414527 /* PBXTargetDependency */,
+			);
+			name = "Pontem VendedorUITests";
+			productName = "Pontem VendedorUITests";
+			productReference = 32716C4C1FD72B1500414527 /* Pontem VendedorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32716C251FD72B1500414527 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Luís Henrique Delgado Santos";
+				TargetAttributes = {
+					32716C2C1FD72B1500414527 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					32716C401FD72B1500414527 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32716C2C1FD72B1500414527;
+					};
+					32716C4B1FD72B1500414527 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32716C2C1FD72B1500414527;
+					};
+				};
+			};
+			buildConfigurationList = 32716C281FD72B1500414527 /* Build configuration list for PBXProject "Pontem Vendedor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32716C241FD72B1500414527;
+			productRefGroup = 32716C2E1FD72B1500414527 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32716C2C1FD72B1500414527 /* Pontem Vendedor */,
+				32716C401FD72B1500414527 /* Pontem VendedorTests */,
+				32716C4B1FD72B1500414527 /* Pontem VendedorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32716C2B1FD72B1500414527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32716C3B1FD72B1500414527 /* LaunchScreen.storyboard in Resources */,
+				32716C381FD72B1500414527 /* Assets.xcassets in Resources */,
+				32716C361FD72B1500414527 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32716C3F1FD72B1500414527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32716C4A1FD72B1500414527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32716C291FD72B1500414527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32716C331FD72B1500414527 /* ViewController.swift in Sources */,
+				32716C311FD72B1500414527 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32716C3D1FD72B1500414527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32716C461FD72B1500414527 /* Pontem_VendedorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32716C481FD72B1500414527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32716C511FD72B1500414527 /* Pontem_VendedorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32716C431FD72B1500414527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32716C2C1FD72B1500414527 /* Pontem Vendedor */;
+			targetProxy = 32716C421FD72B1500414527 /* PBXContainerItemProxy */;
+		};
+		32716C4E1FD72B1500414527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32716C2C1FD72B1500414527 /* Pontem Vendedor */;
+			targetProxy = 32716C4D1FD72B1500414527 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32716C341FD72B1500414527 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32716C351FD72B1500414527 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32716C391FD72B1500414527 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32716C3A1FD72B1500414527 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32716C531FD72B1600414527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32716C541FD72B1600414527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32716C561FD72B1600414527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCK4T2L944;
+				INFOPLIST_FILE = "Pontem Vendedor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-Vendedor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32716C571FD72B1600414527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCK4T2L944;
+				INFOPLIST_FILE = "Pontem Vendedor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-Vendedor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32716C591FD72B1600414527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCK4T2L944;
+				INFOPLIST_FILE = "Pontem VendedorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-VendedorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pontem Vendedor.app/Pontem Vendedor";
+			};
+			name = Debug;
+		};
+		32716C5A1FD72B1600414527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCK4T2L944;
+				INFOPLIST_FILE = "Pontem VendedorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-VendedorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pontem Vendedor.app/Pontem Vendedor";
+			};
+			name = Release;
+		};
+		32716C5C1FD72B1600414527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCK4T2L944;
+				INFOPLIST_FILE = "Pontem VendedorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-VendedorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pontem Vendedor";
+			};
+			name = Debug;
+		};
+		32716C5D1FD72B1600414527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCK4T2L944;
+				INFOPLIST_FILE = "Pontem VendedorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-VendedorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pontem Vendedor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32716C281FD72B1500414527 /* Build configuration list for PBXProject "Pontem Vendedor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32716C531FD72B1600414527 /* Debug */,
+				32716C541FD72B1600414527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32716C551FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem Vendedor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32716C561FD72B1600414527 /* Debug */,
+				32716C571FD72B1600414527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32716C581FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem VendedorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32716C591FD72B1600414527 /* Debug */,
+				32716C5A1FD72B1600414527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32716C5B1FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem VendedorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32716C5C1FD72B1600414527 /* Debug */,
+				32716C5D1FD72B1600414527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32716C251FD72B1500414527 /* Project object */;
+}
