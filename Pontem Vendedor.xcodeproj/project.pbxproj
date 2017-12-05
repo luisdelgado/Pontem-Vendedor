@@ -14,6 +14,7 @@
 		32716C3B1FD72B1500414527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32716C391FD72B1500414527 /* LaunchScreen.storyboard */; };
 		32716C461FD72B1500414527 /* Pontem_VendedorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C451FD72B1500414527 /* Pontem_VendedorTests.swift */; };
 		32716C511FD72B1500414527 /* Pontem_VendedorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */; };
+		32716C611FD7347C00414527 /* CriarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C601FD7347C00414527 /* CriarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		32716C4C1FD72B1500414527 /* Pontem VendedorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pontem VendedorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pontem_VendedorUITests.swift; sourceTree = "<group>"; };
 		32716C521FD72B1500414527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32716C601FD7347C00414527 /* CriarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				32716C371FD72B1500414527 /* Assets.xcassets */,
 				32716C391FD72B1500414527 /* LaunchScreen.storyboard */,
 				32716C3C1FD72B1500414527 /* Info.plist */,
+				32716C601FD7347C00414527 /* CriarViewController.swift */,
 			);
 			path = "Pontem Vendedor";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				32716C331FD72B1500414527 /* ViewController.swift in Sources */,
 				32716C311FD72B1500414527 /* AppDelegate.swift in Sources */,
+				32716C611FD7347C00414527 /* CriarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

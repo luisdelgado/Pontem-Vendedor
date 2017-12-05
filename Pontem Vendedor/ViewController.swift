@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var usuario: UITextField!
-    @IBOutlet weak var senha: UITextField!
+    @IBOutlet var senha: UIView!
     @IBAction func entrar(_ sender: UIButton) {
     }
     @IBAction func criarConta(_ sender: UIButton) {
@@ -19,7 +20,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
