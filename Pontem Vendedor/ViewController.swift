@@ -11,7 +11,6 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var usuario: UITextField!
     @IBOutlet weak var senha: UITextField!
     @IBAction func entrar(_ sender: UIButton) {
@@ -23,7 +22,9 @@ class ViewController: UIViewController {
                 let nextViewController = storyBoard.instantiateViewController(withIdentifier:"PrincipalID") as UIViewController
                 self.present(nextViewController, animated:true, completion:nil)
             } else {
-                print(error.debugDescription)
+                let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
