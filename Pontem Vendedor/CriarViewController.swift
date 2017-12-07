@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CriarViewController: UIViewController {
 
     @IBOutlet weak var usuario: UITextField!
     @IBOutlet weak var senha: UITextField!
     @IBAction func criarContaVendedor(_ sender: UIButton) {
+        let email: String = usuario.text!
+        let senhaString: String = senha.text!
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: senhaString) { (user, error) in
+            if error == nil {
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let nextViewController = storyBoard.instantiateViewController(withIdentifier:"PrincipalID") as UIViewController
+                self.present(nextViewController, animated:true, completion:nil)
+            } else {
+                print(error.debugDescription)
+            }
+        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
