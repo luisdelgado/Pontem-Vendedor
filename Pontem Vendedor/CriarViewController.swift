@@ -11,7 +11,7 @@ import FirebaseAuth
 
 class CriarViewController: UIViewController {
     
-    var userId = ""
+    var userId: String = ""
 
     @IBOutlet weak var usuario: UITextField!
     @IBOutlet weak var senha: UITextField!
@@ -21,8 +21,8 @@ class CriarViewController: UIViewController {
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: senhaString) { (user, error) in
             if error == nil {
                 self.userId = (user?.uid)!
-                if self.shouldPerformSegue(withIdentifier: "EntrarID", sender: self) {
-                    self.performSegue(withIdentifier: "EntrarID", sender: self.userId)
+                if self.shouldPerformSegue(withIdentifier: "CriarID", sender: self) {
+                    self.performSegue(withIdentifier: "CriarID", sender: self.userId)
                 }
             } else {
                 let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
@@ -49,7 +49,7 @@ class CriarViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "EntrarID") {
+        if (segue.identifier == "CriarID") {
             let user = segue.destination as! PrincipalViewController
             user.userId = self.userId
         }
