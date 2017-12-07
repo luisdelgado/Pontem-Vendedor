@@ -22,7 +22,7 @@ class CriarViewController: UIViewController {
             if error == nil {
                 self.userId = (user?.uid)!
                 if self.shouldPerformSegue(withIdentifier: "CriarID", sender: self) {
-                    self.performSegue(withIdentifier: "CriarID", sender: self.userId)
+                    self.performSegue(withIdentifier: "CriarID", sender: self)
                 }
             } else {
                 let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
@@ -47,12 +47,4 @@ class CriarViewController: UIViewController {
                                      sender: Any!) -> Bool {
         return self.userId != ""
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "CriarID") {
-            let user = segue.destination as! PrincipalViewController
-            user.userId = self.userId
-        }
-    }
-
 }

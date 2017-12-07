@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class PrincipalViewController: UIViewController {
-
-    var userId: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(userId)
-        // Do any additional setup after loading the view.
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if (user != nil) {
+                print(user?.email)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

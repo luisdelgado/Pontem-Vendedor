@@ -98,7 +98,7 @@
                                 <state key="normal" title="Criar conta vendedor"/>
                                 <connections>
                                     <action selector="criarContaVendedor:" destination="rHu-6J-wZE" eventType="touchUpInside" id="x5T-QL-LVi"/>
-                                    <segue destination="iRk-MO-dpN" kind="show" identifier="CriarID" id="UBM-d2-9Z0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="CriarID" id="a9G-cu-3em"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -130,7 +130,4 @@
             <point key="canvasLocation" x="697" y="846"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="UBM-d2-9Z0"/>
-    </inferredMetricsTieBreakers>
 </document>
