@@ -10,6 +10,7 @@
 		05F8CB0AAC969AFA854DAB07 /* Pods_Pontem_VendedorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893206D6385E6C22124594FC /* Pods_Pontem_VendedorUITests.framework */; };
 		1D5E83A84982CC168F2980A4 /* Pods_Pontem_Vendedor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E786C183ADEE703B5DAADDD6 /* Pods_Pontem_Vendedor.framework */; };
 		1F3B88817F7B4A64944D9425 /* Pods_Pontem_VendedorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E959F7188D3196F81A6AA96 /* Pods_Pontem_VendedorTests.framework */; };
+		320AD3E71FD97AC000800FB6 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320AD3E61FD97AC000800FB6 /* PrincipalViewController.swift */; };
 		32716C311FD72B1500414527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C301FD72B1500414527 /* AppDelegate.swift */; };
 		32716C331FD72B1500414527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C321FD72B1500414527 /* ViewController.swift */; };
 		32716C361FD72B1500414527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32716C341FD72B1500414527 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		1865C2723F0E829D72DC58B2 /* Pods-Pontem Vendedor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem Vendedor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem Vendedor/Pods-Pontem Vendedor.debug.xcconfig"; sourceTree = "<group>"; };
 		2E959F7188D3196F81A6AA96 /* Pods_Pontem_VendedorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontem_VendedorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320AD3E61FD97AC000800FB6 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		32716C2D1FD72B1500414527 /* Pontem Vendedor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pontem Vendedor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32716C301FD72B1500414527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32716C321FD72B1500414527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				32716C391FD72B1500414527 /* LaunchScreen.storyboard */,
 				32716C3C1FD72B1500414527 /* Info.plist */,
 				32716C601FD7347C00414527 /* CriarViewController.swift */,
+				320AD3E61FD97AC000800FB6 /* PrincipalViewController.swift */,
 			);
 			path = "Pontem Vendedor";
 			sourceTree = "<group>";
@@ -366,11 +369,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pontem Vendedor/Pods-Pontem Vendedor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -468,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32716C331FD72B1500414527 /* ViewController.swift in Sources */,
+				320AD3E71FD97AC000800FB6 /* PrincipalViewController.swift in Sources */,
 				32716C311FD72B1500414527 /* AppDelegate.swift in Sources */,
 				32716C611FD7347C00414527 /* CriarViewController.swift in Sources */,
 			);
@@ -640,7 +646,7 @@
 				DEVELOPMENT_TEAM = HCK4T2L944;
 				INFOPLIST_FILE = "Pontem Vendedor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-Vendedor";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pontem.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -656,7 +662,7 @@
 				DEVELOPMENT_TEAM = HCK4T2L944;
 				INFOPLIST_FILE = "Pontem Vendedor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-Vendedor";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pontem.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
