@@ -10,6 +10,8 @@ import UIKit
 import FirebaseAuth
 
 class CriarViewController: UIViewController {
+    
+    var userId = ""
 
     @IBOutlet weak var usuario: UITextField!
     @IBOutlet weak var senha: UITextField!
@@ -18,9 +20,10 @@ class CriarViewController: UIViewController {
         let senhaString: String = senha.text!
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: senhaString) { (user, error) in
             if error == nil {
-                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                let nextViewController = storyBoard.instantiateViewController(withIdentifier:"PrincipalID") as UIViewController
-                self.present(nextViewController, animated:true, completion:nil)
+                self.userId = (user?.uid)!
+                if self.shouldPerformSegue(withIdentifier: "EntrarID", sender: self) {
+                    self.performSegue(withIdentifier: "EntrarID", sender: self.userId)
+                }
             } else {
                 let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
@@ -40,15 +43,16 @@ class CriarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func shouldPerformSegue(withIdentifier identifier: String,
+                                     sender: Any!) -> Bool {
+        return self.userId != ""
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "EntrarID") {
+            let user = segue.destination as! PrincipalViewController
+            user.userId = self.userId
+        }
+    }
 
 }

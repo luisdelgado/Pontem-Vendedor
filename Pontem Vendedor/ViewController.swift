@@ -11,6 +11,8 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
 
+    var userId: String = ""
+    
     @IBOutlet weak var usuario: UITextField!
     @IBOutlet weak var senha: UITextField!
     @IBAction func entrar(_ sender: UIButton) {
@@ -18,9 +20,10 @@ class ViewController: UIViewController {
         let senhaString: String = senha.text!
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: senhaString) { (user, error) in
             if error == nil {
-                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                let nextViewController = storyBoard.instantiateViewController(withIdentifier:"PrincipalID") as UIViewController
-                self.present(nextViewController, animated:true, completion:nil)
+                self.userId = (user?.uid)!
+                if self.shouldPerformSegue(withIdentifier: "EntrarID", sender: self) {
+                    self.performSegue(withIdentifier: "EntrarID", sender: self.userId)
+                }
             } else {
                 let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
@@ -40,6 +43,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func shouldPerformSegue(withIdentifier identifier: String,
+                                     sender: Any!) -> Bool {
+        return self.userId != ""
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "EntrarID") {
+            let user = segue.destination as! PrincipalViewController
+            user.userId = self.userId
+        }
+    }
 }
 

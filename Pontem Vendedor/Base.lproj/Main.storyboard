@@ -33,6 +33,7 @@
                                 <state key="normal" title="Entrar"/>
                                 <connections>
                                     <action selector="entrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYq-NL-Uze"/>
+                                    <segue destination="iRk-MO-dpN" kind="show" identifier="EntrarID" id="tEZ-oM-lie"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Usuário" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98p-Rz-H9z">

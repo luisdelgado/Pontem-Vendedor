@@ -10,9 +10,11 @@ import UIKit
 
 class PrincipalViewController: UIViewController {
 
+    var userId: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(userId)
         // Do any additional setup after loading the view.
     }
 
