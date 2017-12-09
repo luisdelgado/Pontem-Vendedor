@@ -27,8 +27,6 @@ class ProdutoViewController: UIViewController {
                 ref.child("users/\(userID!)/produtos/\(productKey)").child("productname").setValue(self.nomeProduto.text)
                 ref.child("users/\(userID!)/produtos/\(productKey)").child("productprice").setValue(self.precoProduto.text)
                 ref.child("users/\(userID!)/produtos/\(productKey)").child("productcategory").setValue(self.categoriaProduto.text)
-            } else {
-                
             }
     }
     }

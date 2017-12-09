@@ -12,6 +12,8 @@ import FirebaseDatabase
 
 class PrincipalViewController: UIViewController, UITableViewDelegate {
     
+    var produtosLocal: [String] = []
+    
     var productname: String = ""
     var contadorProdutos: Int = 0
     var temAtual: String = ""
@@ -33,21 +35,19 @@ class PrincipalViewController: UIViewController, UITableViewDelegate {
                     self.userEmail.text = useremail
                     let produtos = value?["produtos"] as? NSDictionary
                     if produtos != nil {
-                        for (produto1, _) in produtos! {
+                        for (produto, _) in produtos! {
                             self.contadorProdutos = self.contadorProdutos + 1
-                            if let keyDict = produtos![produto1] as? NSDictionary {
-                                if let imageURL = keyDict["productname"] as? String {
-                                    self.productname.append(imageURL)
+                            if let keyDict = produtos![produto] as? NSDictionary {
+                                if let produtoAtual = keyDict["productname"] as? String {
+                                    self.produtosLocal.append(produtoAtual)
                                 }
-                                print(self.productname)
                             }
                         }
                     }
+                    print(self.produtosLocal)
                 }) { (error) in
                     print(error.localizedDescription)
                 }
-            } else {
-                
             }
         }
     }
