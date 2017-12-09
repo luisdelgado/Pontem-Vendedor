@@ -10,7 +10,11 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class PrincipalViewController: UIViewController {
+class PrincipalViewController: UIViewController, UITableViewDelegate {
+    
+    var productname: String = ""
+    var contadorProdutos: Int = 0
+    var temAtual: String = ""
     
     @IBOutlet weak var userEmail: UILabel!
     
@@ -26,6 +30,16 @@ class PrincipalViewController: UIViewController {
                     let value = snapshot.value as? NSDictionary
                     let useremail = value?["useremail"] as? String ?? ""
                     self.userEmail.text = useremail
+                    let produtos = value?["produtos"] as? NSDictionary
+                    for (produto1, _) in produtos! {
+                        self.contadorProdutos = self.contadorProdutos + 1
+                        if let keyDict = produtos![produto1] as? NSDictionary {
+                            if let imageURL = keyDict["productname"] as? String {
+                                self.productname.append(imageURL)
+                            }
+                            print(self.productname)
+                        }
+                    }
                 }) { (error) in
                     print(error.localizedDescription)
                 }
@@ -50,5 +64,12 @@ class PrincipalViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return contadorProdutos
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
 }
