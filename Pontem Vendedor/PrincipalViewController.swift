@@ -8,14 +8,29 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class PrincipalViewController: UIViewController {
+    
+    @IBOutlet weak var userEmail: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if (user != nil) {
-                print(user?.email)
+                let userID = Auth.auth().currentUser?.uid
+                var ref: DatabaseReference!
+                ref = Database.database().reference()
+                ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    // Get user value
+                    let value = snapshot.value as? NSDictionary
+                    let useremail = value?["useremail"] as? String ?? ""
+                    self.userEmail.text = useremail
+                }) { (error) in
+                    print(error.localizedDescription)
+                }
+            } else {
+                
             }
         }
     }
