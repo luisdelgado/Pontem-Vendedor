@@ -20,6 +20,7 @@
 		32716C511FD72B1500414527 /* Pontem_VendedorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */; };
 		32716C611FD7347C00414527 /* CriarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C601FD7347C00414527 /* CriarViewController.swift */; };
 		32716C631FD73C4800414527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32716C621FD73C4800414527 /* GoogleService-Info.plist */; };
+		32C3CA0E1FDC5BAD00209193 /* ProdutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3CA0D1FDC5BAD00209193 /* ProdutoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		32716C521FD72B1500414527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32716C601FD7347C00414527 /* CriarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarViewController.swift; sourceTree = "<group>"; };
 		32716C621FD73C4800414527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32C3CA0D1FDC5BAD00209193 /* ProdutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoViewController.swift; sourceTree = "<group>"; };
 		4DC5014FDC5AE993A2C7C36D /* Pods-Pontem VendedorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem VendedorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem VendedorTests/Pods-Pontem VendedorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6621F1E68E1B37C7F85EE9C3 /* Pods-Pontem VendedorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem VendedorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem VendedorUITests/Pods-Pontem VendedorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		893206D6385E6C22124594FC /* Pods_Pontem_VendedorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontem_VendedorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				32716C3C1FD72B1500414527 /* Info.plist */,
 				32716C601FD7347C00414527 /* CriarViewController.swift */,
 				320AD3E61FD97AC000800FB6 /* PrincipalViewController.swift */,
+				32C3CA0D1FDC5BAD00209193 /* ProdutoViewController.swift */,
 			);
 			path = "Pontem Vendedor";
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C3CA0E1FDC5BAD00209193 /* ProdutoViewController.swift in Sources */,
 				32716C331FD72B1500414527 /* ViewController.swift in Sources */,
 				320AD3E71FD97AC000800FB6 /* PrincipalViewController.swift in Sources */,
 				32716C311FD72B1500414527 /* AppDelegate.swift in Sources */,

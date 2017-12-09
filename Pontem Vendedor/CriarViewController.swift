@@ -13,7 +13,7 @@ import FirebaseDatabase
 class CriarViewController: UIViewController {
     
     var userId: String = ""
-
+    
     @IBOutlet weak var usuario: UITextField!
     @IBOutlet weak var senha: UITextField!
     @IBAction func criarContaVendedor(_ sender: UIButton) {

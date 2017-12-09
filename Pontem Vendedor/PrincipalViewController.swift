@@ -17,6 +17,7 @@ class PrincipalViewController: UIViewController, UITableViewDelegate {
     var temAtual: String = ""
     
     @IBOutlet weak var userEmail: UILabel!
+    @IBOutlet weak var adicionarProduto: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +32,15 @@ class PrincipalViewController: UIViewController, UITableViewDelegate {
                     let useremail = value?["useremail"] as? String ?? ""
                     self.userEmail.text = useremail
                     let produtos = value?["produtos"] as? NSDictionary
-                    for (produto1, _) in produtos! {
-                        self.contadorProdutos = self.contadorProdutos + 1
-                        if let keyDict = produtos![produto1] as? NSDictionary {
-                            if let imageURL = keyDict["productname"] as? String {
-                                self.productname.append(imageURL)
+                    if produtos != nil {
+                        for (produto1, _) in produtos! {
+                            self.contadorProdutos = self.contadorProdutos + 1
+                            if let keyDict = produtos![produto1] as? NSDictionary {
+                                if let imageURL = keyDict["productname"] as? String {
+                                    self.productname.append(imageURL)
+                                }
+                                print(self.productname)
                             }
-                            print(self.productname)
                         }
                     }
                 }) { (error) in
