@@ -1,0 +1,6 @@
+framework module Pods_Pontem_VendedorUITests {
+  umbrella header "Pods-Pontem VendedorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

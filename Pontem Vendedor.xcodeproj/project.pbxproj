@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F8CB0AAC969AFA854DAB07 /* Pods_Pontem_VendedorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893206D6385E6C22124594FC /* Pods_Pontem_VendedorUITests.framework */; };
+		1D5E83A84982CC168F2980A4 /* Pods_Pontem_Vendedor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E786C183ADEE703B5DAADDD6 /* Pods_Pontem_Vendedor.framework */; };
+		1F3B88817F7B4A64944D9425 /* Pods_Pontem_VendedorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E959F7188D3196F81A6AA96 /* Pods_Pontem_VendedorTests.framework */; };
+		320AD3E71FD97AC000800FB6 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320AD3E61FD97AC000800FB6 /* PrincipalViewController.swift */; };
 		32716C311FD72B1500414527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C301FD72B1500414527 /* AppDelegate.swift */; };
 		32716C331FD72B1500414527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C321FD72B1500414527 /* ViewController.swift */; };
 		32716C361FD72B1500414527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32716C341FD72B1500414527 /* Main.storyboard */; };
@@ -14,6 +18,8 @@
 		32716C3B1FD72B1500414527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32716C391FD72B1500414527 /* LaunchScreen.storyboard */; };
 		32716C461FD72B1500414527 /* Pontem_VendedorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C451FD72B1500414527 /* Pontem_VendedorTests.swift */; };
 		32716C511FD72B1500414527 /* Pontem_VendedorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */; };
+		32716C611FD7347C00414527 /* CriarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32716C601FD7347C00414527 /* CriarViewController.swift */; };
+		32716C631FD73C4800414527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32716C621FD73C4800414527 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1865C2723F0E829D72DC58B2 /* Pods-Pontem Vendedor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem Vendedor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem Vendedor/Pods-Pontem Vendedor.debug.xcconfig"; sourceTree = "<group>"; };
+		2E959F7188D3196F81A6AA96 /* Pods_Pontem_VendedorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontem_VendedorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320AD3E61FD97AC000800FB6 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		32716C2D1FD72B1500414527 /* Pontem Vendedor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pontem Vendedor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32716C301FD72B1500414527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32716C321FD72B1500414527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,15 @@
 		32716C4C1FD72B1500414527 /* Pontem VendedorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pontem VendedorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32716C501FD72B1500414527 /* Pontem_VendedorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pontem_VendedorUITests.swift; sourceTree = "<group>"; };
 		32716C521FD72B1500414527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32716C601FD7347C00414527 /* CriarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarViewController.swift; sourceTree = "<group>"; };
+		32716C621FD73C4800414527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DC5014FDC5AE993A2C7C36D /* Pods-Pontem VendedorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem VendedorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem VendedorTests/Pods-Pontem VendedorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6621F1E68E1B37C7F85EE9C3 /* Pods-Pontem VendedorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem VendedorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem VendedorUITests/Pods-Pontem VendedorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		893206D6385E6C22124594FC /* Pods_Pontem_VendedorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontem_VendedorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DB89E0E5E50918745CDFB7 /* Pods-Pontem Vendedor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem Vendedor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem Vendedor/Pods-Pontem Vendedor.release.xcconfig"; sourceTree = "<group>"; };
+		E786C183ADEE703B5DAADDD6 /* Pods_Pontem_Vendedor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontem_Vendedor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6A6670A403A3072B1D9660 /* Pods-Pontem VendedorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem VendedorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem VendedorTests/Pods-Pontem VendedorTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEB9218EDF13F23B6BE54211 /* Pods-Pontem VendedorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontem VendedorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pontem VendedorUITests/Pods-Pontem VendedorUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5E83A84982CC168F2980A4 /* Pods_Pontem_Vendedor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3B88817F7B4A64944D9425 /* Pods_Pontem_VendedorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F8CB0AAC969AFA854DAB07 /* Pods_Pontem_VendedorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D9C5A61EB3E964D729D65AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1865C2723F0E829D72DC58B2 /* Pods-Pontem Vendedor.debug.xcconfig */,
+				C3DB89E0E5E50918745CDFB7 /* Pods-Pontem Vendedor.release.xcconfig */,
+				4DC5014FDC5AE993A2C7C36D /* Pods-Pontem VendedorTests.debug.xcconfig */,
+				ED6A6670A403A3072B1D9660 /* Pods-Pontem VendedorTests.release.xcconfig */,
+				6621F1E68E1B37C7F85EE9C3 /* Pods-Pontem VendedorUITests.debug.xcconfig */,
+				EEB9218EDF13F23B6BE54211 /* Pods-Pontem VendedorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		32716C241FD72B1500414527 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +115,8 @@
 				32716C441FD72B1500414527 /* Pontem VendedorTests */,
 				32716C4F1FD72B1500414527 /* Pontem VendedorUITests */,
 				32716C2E1FD72B1500414527 /* Products */,
+				0D9C5A61EB3E964D729D65AC /* Pods */,
+				EC367D61CE0AA1367621F6AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +133,15 @@
 		32716C2F1FD72B1500414527 /* Pontem Vendedor */ = {
 			isa = PBXGroup;
 			children = (
+				32716C621FD73C4800414527 /* GoogleService-Info.plist */,
 				32716C301FD72B1500414527 /* AppDelegate.swift */,
 				32716C321FD72B1500414527 /* ViewController.swift */,
 				32716C341FD72B1500414527 /* Main.storyboard */,
 				32716C371FD72B1500414527 /* Assets.xcassets */,
 				32716C391FD72B1500414527 /* LaunchScreen.storyboard */,
 				32716C3C1FD72B1500414527 /* Info.plist */,
+				32716C601FD7347C00414527 /* CriarViewController.swift */,
+				320AD3E61FD97AC000800FB6 /* PrincipalViewController.swift */,
 			);
 			path = "Pontem Vendedor";
 			sourceTree = "<group>";
@@ -125,6 +164,16 @@
 			path = "Pontem VendedorUITests";
 			sourceTree = "<group>";
 		};
+		EC367D61CE0AA1367621F6AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E786C183ADEE703B5DAADDD6 /* Pods_Pontem_Vendedor.framework */,
+				2E959F7188D3196F81A6AA96 /* Pods_Pontem_VendedorTests.framework */,
+				893206D6385E6C22124594FC /* Pods_Pontem_VendedorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32716C551FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem Vendedor" */;
 			buildPhases = (
+				710C50AC37E942C7763D743E /* [CP] Check Pods Manifest.lock */,
 				32716C291FD72B1500414527 /* Sources */,
 				32716C2A1FD72B1500414527 /* Frameworks */,
 				32716C2B1FD72B1500414527 /* Resources */,
+				8F1BADFF85FB11A30DA2899F /* [CP] Embed Pods Frameworks */,
+				CEEC7901E86EEBC425E7314D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32716C581FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem VendedorTests" */;
 			buildPhases = (
+				BB866258DB26BDBC763A1CAE /* [CP] Check Pods Manifest.lock */,
 				32716C3D1FD72B1500414527 /* Sources */,
 				32716C3E1FD72B1500414527 /* Frameworks */,
 				32716C3F1FD72B1500414527 /* Resources */,
+				EF8DA46C2CE2B0F7D35A2328 /* [CP] Embed Pods Frameworks */,
+				C9D01D77F90D543A096A6A22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32716C5B1FD72B1600414527 /* Build configuration list for PBXNativeTarget "Pontem VendedorUITests" */;
 			buildPhases = (
+				B7A668C2DC1B0EDCE7235542 /* [CP] Check Pods Manifest.lock */,
 				32716C481FD72B1500414527 /* Sources */,
 				32716C491FD72B1500414527 /* Frameworks */,
 				32716C4A1FD72B1500414527 /* Resources */,
+				71790206E91CBA81FC386E0C /* [CP] Embed Pods Frameworks */,
+				0638C583125840429A7DC16E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32716C3B1FD72B1500414527 /* LaunchScreen.storyboard in Resources */,
+				32716C631FD73C4800414527 /* GoogleService-Info.plist in Resources */,
 				32716C381FD72B1500414527 /* Assets.xcassets in Resources */,
 				32716C361FD72B1500414527 /* Main.storyboard in Resources */,
 			);
@@ -254,13 +313,171 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0638C583125840429A7DC16E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pontem VendedorUITests/Pods-Pontem VendedorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		710C50AC37E942C7763D743E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pontem Vendedor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71790206E91CBA81FC386E0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pontem VendedorUITests/Pods-Pontem VendedorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F1BADFF85FB11A30DA2899F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pontem Vendedor/Pods-Pontem Vendedor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pontem Vendedor/Pods-Pontem Vendedor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7A668C2DC1B0EDCE7235542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pontem VendedorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB866258DB26BDBC763A1CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pontem VendedorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9D01D77F90D543A096A6A22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pontem VendedorTests/Pods-Pontem VendedorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEEC7901E86EEBC425E7314D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pontem Vendedor/Pods-Pontem Vendedor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF8DA46C2CE2B0F7D35A2328 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pontem VendedorTests/Pods-Pontem VendedorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32716C291FD72B1500414527 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				32716C331FD72B1500414527 /* ViewController.swift in Sources */,
+				320AD3E71FD97AC000800FB6 /* PrincipalViewController.swift in Sources */,
 				32716C311FD72B1500414527 /* AppDelegate.swift in Sources */,
+				32716C611FD7347C00414527 /* CriarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +641,14 @@
 		};
 		32716C561FD72B1600414527 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1865C2723F0E829D72DC58B2 /* Pods-Pontem Vendedor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCK4T2L944;
 				INFOPLIST_FILE = "Pontem Vendedor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-Vendedor";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pontem.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,13 +657,14 @@
 		};
 		32716C571FD72B1600414527 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DB89E0E5E50918745CDFB7 /* Pods-Pontem Vendedor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCK4T2L944;
 				INFOPLIST_FILE = "Pontem Vendedor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.Pontem-Vendedor";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pontem.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,6 +673,7 @@
 		};
 		32716C591FD72B1600414527 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC5014FDC5AE993A2C7C36D /* Pods-Pontem VendedorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +691,7 @@
 		};
 		32716C5A1FD72B1600414527 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6A6670A403A3072B1D9660 /* Pods-Pontem VendedorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +709,7 @@
 		};
 		32716C5C1FD72B1600414527 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6621F1E68E1B37C7F85EE9C3 /* Pods-Pontem VendedorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +726,7 @@
 		};
 		32716C5D1FD72B1600414527 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEB9218EDF13F23B6BE54211 /* Pods-Pontem VendedorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

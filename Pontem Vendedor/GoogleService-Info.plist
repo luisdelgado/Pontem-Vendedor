@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>69968766224-lejm7c87dmjd21ag00u4jgiv0rm6n60l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.69968766224-lejm7c87dmjd21ag00u4jgiv0rm6n60l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCD1U_wrVRwn_GrllPuOO7TizOHhedXhHY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>69968766224</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pontem.ios</string>
+	<key>PROJECT_ID</key>
+	<string>pontem-b3b18</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pontem-b3b18.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:69968766224:ios:a9ac297fbb3b5434</string>
+	<key>DATABASE_URL</key>
+	<string>https://pontem-b3b18.firebaseio.com</string>
+</dict>
+</plist>
