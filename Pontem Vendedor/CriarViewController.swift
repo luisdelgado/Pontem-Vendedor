@@ -14,17 +14,24 @@ class CriarViewController: UIViewController {
     
     var userId: String = ""
     
-    @IBOutlet weak var usuario: UITextField!
-    @IBOutlet weak var senha: UITextField!
-    @IBAction func criarContaVendedor(_ sender: UIButton) {
-        let email: String = usuario.text!
-        let senhaString: String = senha.text!
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: senhaString) { (user, error) in
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var phoneField: UITextField!
+    
+    @IBAction func signUp(_ sender: Any) {
+        let email: String = self.emailField.text!
+        let password: String = self.passwordField.text!
+        let name: String = self.nameField.text!
+        let phone: String = self.phoneField.text!
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if error == nil {
                 self.userId = (user?.uid)!
                 var ref: DatabaseReference!
                 ref = Database.database().reference()
-                ref.child("users/\(self.userId)").child("useremail").setValue(user?.email)
+                ref.child("users/\(self.userId)").child("name").setValue(name)
+                ref.child("users/\(self.userId)").child("email").setValue(email)
+                ref.child("users/\(self.userId)").child("phone").setValue(phone)
                 if self.shouldPerformSegue(withIdentifier: "CriarID", sender: self) {
                     self.performSegue(withIdentifier: "CriarID", sender: self)
                 }
@@ -38,13 +45,10 @@ class CriarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String,
