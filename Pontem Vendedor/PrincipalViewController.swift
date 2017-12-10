@@ -67,12 +67,4 @@ class PrincipalViewController: UIViewController, UITableViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contadorProdutos
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
 }
