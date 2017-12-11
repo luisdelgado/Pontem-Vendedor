@@ -54,5 +54,5 @@ class CriarViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String,
                                      sender: Any!) -> Bool {
         return self.userId != ""
-    }
+    } 
 }

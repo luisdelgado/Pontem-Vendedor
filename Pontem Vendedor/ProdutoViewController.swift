@@ -20,30 +20,44 @@ class ProdutoViewController: UIViewController {
     @IBOutlet weak var isVeganField: UISwitch!
     @IBOutlet weak var imagePreview: UIImageView!
     
+    var uploaded: Bool = false
+    
     @IBAction func cadastrarProduto(_ sender: Any) {
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if (user != nil) {
                 let userID = Auth.auth().currentUser?.uid
                 var ref: DatabaseReference!
                 ref = Database.database().reference()
-                
+
                 let productKey = ref.child("users/\(userID!)/products/").childByAutoId().key
-                
+
                 let storageRef = Storage.storage().reference().child("images/\(userID!)/products/\(productKey)")
                 
-                let uploadTask = riversRef.putData(data, metadata: nil) { (metadata, error) in
-                    guard let metadata = metadata else {
-                        // Uh-oh, an error occurred!
-                        return
+                if let data = UIImagePNGRepresentation(self.imagePreview.image!) {
+                    let metadata = StorageMetadata()
+                    metadata.contentType = "image/png"
+                    
+                    storageRef.putData(data, metadata: metadata) { (metadata, error) in
+                        guard let metadata = metadata else {
+                            // Uh-oh, an error occurred!
+                            return
+                        }
+                        // Metadata contains file metadata such as size, content-type, and download URL.
+                        let downloadURL = metadata.downloadURL()!
+                        
+                        self.uploaded = true
+                        
+                        ref.child("users/\(userID!)/products/\(productKey)").child("name").setValue(self.nameField.text)
+                        ref.child("users/\(userID!)/products/\(productKey)").child("price").setValue(self.priceField.text)
+                        ref.child("users/\(userID!)/products/\(productKey)").child("category").setValue(self.categoryField.text)
+                        ref.child("users/\(userID!)/products/\(productKey)").child("vegan").setValue(self.isVeganField.isOn)
+                        ref.child("users/\(userID!)/products/\(productKey)").child("imageUrl").setValue(downloadURL.absoluteString)
+
+                        if self.shouldPerformSegue(withIdentifier: "Profile", sender: self) {
+                            self.performSegue(withIdentifier: "Profile", sender: self)
+                        }
                     }
-                    // Metadata contains file metadata such as size, content-type, and download URL.
-                    let downloadURL = metadata.downloadURL
                 }
-                
-                ref.child("users/\(userID!)/products/\(productKey)").child("name").setValue(self.nameField.text)
-                ref.child("users/\(userID!)/products/\(productKey)").child("price").setValue(self.priceField.text)
-                ref.child("users/\(userID!)/products/\(productKey)").child("category").setValue(self.categoryField.text)
-                ref.child("users/\(userID!)/products/\(productKey)").child("vegan").setValue(self.isVeganField.isOn)
             }
         }
     }
@@ -65,6 +79,11 @@ class ProdutoViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String,
+                                     sender: Any!) -> Bool {
+        return self.uploaded
     }
     
 
