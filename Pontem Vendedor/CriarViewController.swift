@@ -8,11 +8,12 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class CriarViewController: UIViewController {
     
     var userId: String = ""
-
+    
     @IBOutlet weak var usuario: UITextField!
     @IBOutlet weak var senha: UITextField!
     @IBAction func criarContaVendedor(_ sender: UIButton) {
@@ -21,6 +22,9 @@ class CriarViewController: UIViewController {
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: senhaString) { (user, error) in
             if error == nil {
                 self.userId = (user?.uid)!
+                var ref: DatabaseReference!
+                ref = Database.database().reference()
+                ref.child("users/\(self.userId)").child("useremail").setValue(user?.email)
                 if self.shouldPerformSegue(withIdentifier: "CriarID", sender: self) {
                     self.performSegue(withIdentifier: "CriarID", sender: self)
                 }

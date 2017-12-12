@@ -8,14 +8,46 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
-class PrincipalViewController: UIViewController {
+class PrincipalViewController: UIViewController, UITableViewDelegate {
+    
+    var produtosLocal: [String] = []
+    
+    var productname: String = ""
+    var contadorProdutos: Int = 0
+    var temAtual: String = ""
+    
+    @IBOutlet weak var userEmail: UILabel!
+    @IBOutlet weak var adicionarProduto: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if (user != nil) {
-                print(user?.email)
+                let userID = Auth.auth().currentUser?.uid
+                var ref: DatabaseReference!
+                ref = Database.database().reference()
+                ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    // Get user value
+                    let value = snapshot.value as? NSDictionary
+                    let useremail = value?["useremail"] as? String ?? ""
+                    self.userEmail.text = useremail
+                    let produtos = value?["produtos"] as? NSDictionary
+                    if produtos != nil {
+                        for (produto, _) in produtos! {
+                            self.contadorProdutos = self.contadorProdutos + 1
+                            if let keyDict = produtos![produto] as? NSDictionary {
+                                if let produtoAtual = keyDict["productname"] as? String {
+                                    self.produtosLocal.append(produtoAtual)
+                                }
+                            }
+                        }
+                    }
+                    print(self.produtosLocal)
+                }) { (error) in
+                    print(error.localizedDescription)
+                }
             }
         }
     }
@@ -35,5 +67,4 @@ class PrincipalViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
