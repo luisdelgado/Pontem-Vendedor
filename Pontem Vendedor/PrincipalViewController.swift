@@ -12,14 +12,10 @@ import FirebaseDatabase
 
 class PrincipalViewController: UIViewController, UITableViewDelegate {
     
-    var produtosLocal: [String] = []
+    var products: [String] = []
+    var productCount: Int = 0
     
-    var productname: String = ""
-    var contadorProdutos: Int = 0
-    var temAtual: String = ""
-    
-    @IBOutlet weak var userEmail: UILabel!
-    @IBOutlet weak var adicionarProduto: UIButton!
+    @IBOutlet weak var name: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,22 +27,20 @@ class PrincipalViewController: UIViewController, UITableViewDelegate {
                 ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
                     // Get user value
                     let value = snapshot.value as? NSDictionary
-                    let useremail = value?["useremail"] as? String ?? ""
-                    self.userEmail.text = useremail
-                    let produtos = value?["produtos"] as? NSDictionary
-                    if produtos != nil {
-                        for (produto, _) in produtos! {
-                            self.contadorProdutos = self.contadorProdutos + 1
-                            if let keyDict = produtos![produto] as? NSDictionary {
-                                if let produtoAtual = keyDict["productname"] as? String {
-                                    self.produtosLocal.append(produtoAtual)
+                    let name = value?["name"] as? String ?? ""
+                    self.name.text = name
+                    let products = value?["produtos"] as? NSDictionary
+                    if products != nil {
+                        for (productId, _) in products! {
+                            self.productCount = self.productCount + 1
+                            if let product = products![productId] as? NSDictionary {
+                                if let productName = product["name"] as? String {
+                                    self.products.append(productName)
                                 }
                             }
                         }
                     }
-                    print(self.produtosLocal)
                 }) { (error) in
-                    print(error.localizedDescription)
                 }
             }
         }

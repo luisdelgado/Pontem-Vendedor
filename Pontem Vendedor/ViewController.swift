@@ -13,12 +13,14 @@ class ViewController: UIViewController {
 
     var userId: String = ""
     
-    @IBOutlet weak var usuario: UITextField!
-    @IBOutlet weak var senha: UITextField!
-    @IBAction func entrar(_ sender: UIButton) {
-        let email: String = usuario.text!
-        let senhaString: String = senha.text!
-        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: senhaString) { (user, error) in
+    
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    @IBAction func signIn(_ sender: Any) {
+        let email: String = self.emailField.text!
+        let password: String = self.passwordField.text!
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if error == nil {
                 self.userId = (user?.uid)!
                 if self.shouldPerformSegue(withIdentifier: "EntrarID", sender: self) {
@@ -30,8 +32,6 @@ class ViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }
-    }
-    @IBAction func criarConta(_ sender: UIButton) {
     }
     
     override func viewDidLoad() {
